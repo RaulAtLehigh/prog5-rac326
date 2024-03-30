@@ -1,0 +1,15 @@
+{
+  "name": "prog5-rac326",
+  "version": "1.0.0",
+  "description": "For a SPA that queries through a database of sogs from the Billboard Hot 100",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specnpmified\" && exit 1"
+  },
+  "author": "Raul Contreras",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "express": "^4.19.2"
+  }
+}
