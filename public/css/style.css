@@ -253,3 +253,47 @@ textarea {
 td {
   padding: 4px;
 }
+body{
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: #DE3F3A;
+  align-self: center;
+}
+form {
+  background-color: #D8DE3A;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border: 1px solid black;
+  padding: 5px;
+  width: fit-content;
+  align-self: center;
+}
+
+#ctrls{
+  display: flex;
+  justify-content: space-between;
+}
+#songsperpage{
+  margin: 5px;
+  width: 20%;
+  align-self: center;
+}
+table, tr, td, th {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  border: 2px solid black;
+}
+tbody tr:nth-child(odd) {
+  background-color: #3A95DE;
+  color: black;
+}
+tbody tr:nth-child(even) {
+  background-color: #517089;
+  color: black;
+}

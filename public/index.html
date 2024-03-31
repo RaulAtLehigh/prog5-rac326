@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Personal Library</title>
+  <title>Billboard Top 100</title>
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
@@ -20,15 +20,49 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <!--Font family using Oswald typeface I found on google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Your contents -->
-
   <script src="js/vendor/jquery.min.js" crossorigin="anonymous"></script>
   <script src="js/vendor/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
+
+  <h1>Billboard Top 100 Search Tool</h1>
+  <form>
+    <label for="artist">Artist:</label>
+    <select id="artist"></select><br>
+    <label for="keyword">Keyword:</label>
+    <input type="text" id="keyword"><br>
+    <div id="ctrls">
+      <button id="prev">&lt;&lt;</button>
+      <button id="search">Search</button>
+      <button id="next">&gt;&gt;</button>
+    </div>
+    <select id="songsperpage">
+      <option value="5">5</option>
+      <option value="10">10</option>5</option>
+      <option value="25">25</option>
+      <option value="50">50</option>
+    </select>
+  </form>
+  <table style="margin: 20px;">
+    <th>
+      <tr>
+        <th style="width: 40px;">NUM</th>
+        <th>Title</th>
+        <th>Artist</th>
+      </tr>
+    </th>
+    <tbody id="songlist">
+
+    </tbody>
+  </table>
 </body>
 
 </html>
