@@ -36,7 +36,9 @@
   <h1>Billboard Top 100 Search Tool</h1>
   <form>
     <label for="artist">Artist:</label>
-    <select id="artist"></select><br>
+    <select id="artist">
+      <option value="none">All</option>
+    </select><br>
     <label for="keyword">Keyword:</label>
     <input type="text" id="keyword"><br>
     <div id="ctrls">
@@ -46,7 +48,7 @@
     </div>
     <select id="songsperpage">
       <option value="5">5</option>
-      <option value="10">10</option>5</option>
+      <option value="10">15</option>5</option>
       <option value="25">25</option>
       <option value="50">50</option>
     </select>
@@ -60,7 +62,13 @@
       </tr>
     </th>
     <tbody id="songlist">
-
+      <!--
+        <tr>
+          <td>song #</td>
+          <td>song Title</td>
+          <td>song Artist</td>
+        </tr>
+      -->>
     </tbody>
   </table>
 </body>
