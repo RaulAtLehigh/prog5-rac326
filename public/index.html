@@ -34,13 +34,16 @@
   <script src="js/script.js"></script>
 
   <h1>Billboard Top 100 Search Tool</h1>
-  <form>
-    <label for="artist">Artist:</label>
-    <select id="artist">
-      <option value="none">All</option>
-    </select><br>
-    <label for="keyword">Keyword:</label>
-    <input type="text" id="keyword"><br>
+  <div id="clickables">
+
+    <form>
+      <label for="artist">Artist:</label>
+      <select id="artist">
+        <option value="All">All</option>
+      </select><br>
+      <label for="keyword">Keyword:</label>
+      <input type="text" id="keyword"><br>
+    </form>
     <div id="ctrls">
       <button id="prev">&lt;&lt;</button>
       <button id="search">Search</button>
@@ -52,11 +55,12 @@
       <option value="25">25</option>
       <option value="50">50</option>
     </select>
-  </form>
-  <table style="margin: 20px;">
+  </div>
+
+    <table style="margin: 20px;">
     <th>
       <tr>
-        <th style="width: 40px;">NUM</th>
+        <th style="width: 40px;">ID</th>
         <th>Title</th>
         <th>Artist</th>
       </tr>
@@ -68,9 +72,10 @@
           <td>song Title</td>
           <td>song Artist</td>
         </tr>
-      -->>
+      -->
     </tbody>
   </table>
+  <p id="tracker"></p>
 </body>
 
 </html>

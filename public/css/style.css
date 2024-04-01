@@ -264,7 +264,7 @@ h1{
   color: #DE3F3A;
   align-self: center;
 }
-form {
+#clickables {
   background-color: #D8DE3A;
   display: flex;
   flex-direction: column;
@@ -289,11 +289,7 @@ table, tr, td, th {
   font-optical-sizing: auto;
   border: 2px solid black;
 }
-tbody tr:nth-child(odd) {
-  background-color: #3A95DE;
-  color: black;
-}
-tbody tr:nth-child(even) {
-  background-color: #517089;
-  color: black;
+
+#numone{
+  background-color: #B6FC9D;
 }
